@@ -7,6 +7,7 @@
 	--color-pink: #BC5090;
 	--color-purple: #58508D;
 	--color-blue: #00405C;
+	--color-light-blue: #006895;
 	--color-gray: #31363A;
 
 	/* Fonts */
@@ -16,6 +17,10 @@
 	--text-black: #272727;
 	--text-white: #FFFFFF;
 	--button-font-size: 18px;
+}
+
+*{
+	box-sizing: border-box;
 }
 
 body{
@@ -41,7 +46,7 @@ p, span, ul{
 	font-size: var(--button-font-size);
 	font-family: var(--text-font);
 	font-weight: 600;
-	padding: 4px 16px;
+	padding: 8px 16px;
 	border: none;
 	border-radius: 8px;
 }
@@ -52,7 +57,7 @@ p, span, ul{
 	font-size: var(--button-font-size);
 	font-family: var(--text-font);
 	font-weight: 600;
-	padding: 4px 16px;
+	padding: 8px 16px;
 	border-radius: 8px;
 }
 
@@ -171,4 +176,41 @@ p, span, ul{
 }
 .footer .footer-bottom .thin-text{
 	text-align: center;
+}
+
+
+/* Services */
+.services{
+	background-color: var(--color-blue);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 128px 0px;
+}
+.services > div{
+	background-color: var(--color-light-blue);
+	color: var(--color-white);
+	max-width: 280px;
+	text-align: center;
+	padding: 24px 8px;
+	margin: 0px 20px;
+}
+.services > div img{
+	width: 214px;
+	height: 214px;
+	border-radius: 100%;
+	padding: 8px 0px;
+}
+.services > div h2{
+	padding: 8px 0px;
+}
+.services > div p{
+	padding: 8px;
+}
+.services > div button{
+	width: 100%;
+	margin: 8px 0px;
+}
+.services .services-buttons{
+	margin: 8px 8px;
 }
