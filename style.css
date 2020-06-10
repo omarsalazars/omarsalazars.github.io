@@ -356,3 +356,63 @@ button{
 	font-size: 24px;
 	color: var(--color-white);
 }
+
+/* Media Query para mobile */
+@media (max-width: 425px){
+	.header{
+		padding: 0px 16px;
+		height: 42px;
+	}
+	.header .logo img{
+		width: 27px;
+		height: 26px;
+	}
+	.header .logo h1{
+		font-size: 16px;
+	}
+	.header .menu ul{
+		display: none;
+	}
+	
+	.hero-banner{
+		height: 251px;
+	}
+	.hero-banner .banner-container h1{
+		font-size: 20px;
+	}
+	.hero-banner .banner-container span{
+		font-size: 8px;
+	}
+	.hero-banner .banner-container button{
+		font-size: 8px;
+	}
+	.simple-banner{
+		max-width: 100%;
+		padding: 48px 0px;
+	}
+	.simple-banner > div{
+		margin: 0px 16px;
+		height: auto;
+	}
+	.simple-banner div:first-child{
+		max-height: 81px;
+	}
+	.simple-banner img{
+	display: inline-block;
+	vertical-align: middle;
+		max-width: 84px;
+		max-height: 81px;
+	}
+	.simple-banner h2{
+		font-size: 16px;
+	}
+	.simple-banner p{
+		font-size: 8px;
+		margin: 8px 0px;
+	}
+
+
+	.search-wrapper .search input{
+		width: 90%;
+	}
+}
