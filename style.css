@@ -34,6 +34,18 @@ h1, h2, h3, h4, h5, h6{
 	margin: 0;
 }
 
+h1{
+	font-size: 64px;
+}
+h2{
+	font-size: 48px;
+}
+h3{
+	font-size: 40px;
+}
+h4{
+	font-size: 24px;
+}
 p, span, ul{
 	font-family: var(--text-font);
 	padding: 0;
@@ -91,6 +103,9 @@ button{
 	color: var(--color-white);
 	text-decoration: none;
 }
+.header .menu img{
+	display: none;
+}
 .header .menu ul{
 	list-style-type: none;
 	height: 100%;
@@ -109,14 +124,14 @@ button{
 	display: flex;
 	align-items: center;
 }
-.header .logo h1{
-	font-family: var(--logo-font);
-	font-weight: 400;
-	padding: 0px 8px;
-}
 .header .logo img{
 	width: 64px;
 	height: 62px;
+}
+.header .logo h3{
+	font-family: var(--logo-font);
+	font-weight: normal;
+	margin: 0px 8px;
 }
 
 /* Footer */
@@ -171,7 +186,7 @@ button{
 .footer .footer-bottom{
 	background-color: var(--color-orange);
 	color: var(--color-white);
-	padding: 32px 0px;
+	padding: 32px 8px;
 }
 .footer .footer-bottom .bold-text{
 	font-weight: bold;
@@ -236,9 +251,6 @@ button{
 .services-wrapper .services-title > *{
 	margin: 20px 0px;
 }
-.services-wrapper .services-title h2{
-	font-size: 48px;
-}
 .services-wrapper .services-title img{
 	width: 167px;
 	height: 167px;
@@ -270,10 +282,6 @@ button{
 	justify-content: center;
 	align-items: center;
 }
-.hero-banner .banner-container h1{
-	font-size: 56px;
-	margin-bottom: 8px;
-}
 .hero-banner .banner-container span{
 	font-size: 24px;
 	margin-bottom: 44px;
@@ -298,6 +306,7 @@ button{
 	padding: 98px 0px;
 	align-content: center;
 	justify-content: center;
+	flex-wrap: wrap;
 	color: var(--color-black);
 }
 .simple-banner > div{
@@ -322,12 +331,6 @@ button{
 	flex-wrap: wrap;
 	padding: 52px 0;
 	color: var(--color-white);
-}
-.search-wrapper h2{
-	font-size: 48px;
-}
-.search-wrapper p{
-	font-size: 26px;
 }
 .search-wrapper > div{
 	text-align: center;
@@ -359,6 +362,18 @@ button{
 
 /* Media Query para mobile */
 @media (max-width: 425px){
+	h1{
+		font-size: 24px;
+	}
+	h2{
+		font-size: 24px;
+	}
+	h3{
+		font-size: 20px;
+	}
+	h4{
+		font-size: 20px;
+	}
 	.header{
 		padding: 0px 16px;
 		height: 42px;
@@ -367,24 +382,34 @@ button{
 		width: 27px;
 		height: 26px;
 	}
-	.header .logo h1{
-		font-size: 16px;
+	.header .menu img{
+		display: block;
+		max-width: 22px;
 	}
 	.header .menu ul{
 		display: none;
 	}
 	
 	.hero-banner{
-		height: 251px;
+		height: 400px;
 	}
 	.hero-banner .banner-container h1{
-		font-size: 20px;
+		text-align: center;
+		font-size: 32px;
+		margin-bottom: 8px;
 	}
 	.hero-banner .banner-container span{
-		font-size: 8px;
+		text-align: center;
+	}
+	.hero-banner .banner-container > div{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 	.hero-banner .banner-container button{
-		font-size: 8px;
+		font-size: 16px;
+		margin: 8px 0;
 	}
 	.simple-banner{
 		max-width: 100%;
@@ -394,25 +419,42 @@ button{
 		margin: 0px 16px;
 		height: auto;
 	}
-	.simple-banner div:first-child{
-		max-height: 81px;
-	}
 	.simple-banner img{
-	display: inline-block;
-	vertical-align: middle;
-		max-width: 84px;
-		max-height: 81px;
+		max-width: 50%;
+		margin-bottom: 10px;
 	}
-	.simple-banner h2{
+	.services-wrapper{
+		padding: 24px 8px;
+	}
+	.search-wrapper .search{
+		max-width: 100%;
+	}
+	.search-wrapper .search input{
+		width: 70%;
+	}
+	.search-wrapper .search button{
+		width: 30%;
+	}
+	.services > div{
+		max-width: 80%;
+		height: auto;
+		min-height: auto;
+		margin-bottom: 24px;
+	}
+	.services-wrapper .services-title{
+		margin: 0px auto 24px auto;
+	}
+	.services .services-buttons{
+		position: initial;
+	}
+	.services > div img{
+		width: 50%;
+		height: auto;
+	}
+	.search-wrapper .search button, .search-wrapper .search input{
 		font-size: 16px;
 	}
-	.simple-banner p{
-		font-size: 8px;
-		margin: 8px 0px;
-	}
-
-
-	.search-wrapper .search input{
-		width: 90%;
+	p, span{
+		font-size: 16px !important;
 	}
 }
