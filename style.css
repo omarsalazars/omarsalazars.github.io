@@ -400,6 +400,7 @@ button{
 	}
 	.hero-banner .banner-container span{
 		text-align: center;
+		padding: 0px 16px;
 	}
 	.hero-banner .banner-container > div{
 		display: flex;
@@ -425,6 +426,14 @@ button{
 	}
 	.services-wrapper{
 		padding: 24px 8px;
+	}
+	.services-wrapper .services-title{
+		padding: 0px 16px;
+		text-align: center;
+	}
+	.services-wrapper .services-title img{
+		max-width: 50%;
+		height: auto;
 	}
 	.search-wrapper .search{
 		max-width: 100%;
