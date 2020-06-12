@@ -46,6 +46,12 @@ h3{
 h4{
 	font-size: 24px;
 }
+h5{
+	font-size: 32px;
+}
+h6{
+	font-size: 16px;
+}
 p, span, ul{
 	font-family: var(--text-font);
 	padding: 0;
@@ -289,7 +295,18 @@ button{
 .hero-banner .banner-container button{
 	margin: 0 12px;
 }
+.hero-banner.left{
+	background-image: url('images/services.webp');
+}
+.hero-banner.left .banner-container{
+	align-items: flex-start;
+	margin-bottom: 24px;
+	margin-left: 42px;
+}
 
+.hero-banner.left .banner-container button{
+	margin: 34px 0px;
+}
 
 /* Black Screen */
 .black-screen{
@@ -360,19 +377,134 @@ button{
 	color: var(--color-white);
 }
 
+/* Jobs */
+.jobs-wrapper{
+	background-color: white;
+	color: var(--color-black);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 100px;
+	flex-wrap: wrap;
+}
+.jobs{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.jobs > div{
+	margin: 16px 52px;
+	max-width: 331px;
+	text-align: center;
+	flex-grow: 1;
+}
+.jobs > div img{
+	max-width: 114px;
+}
+.jobs .job-image{
+	margin: 0 auto 16px auto;
+	width: 214px;
+	height: 214px;
+	border-radius: 50%;
+	background: linear-gradient(180deg, #EAEAEA 0%, rgba(234, 234, 234, 0) 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.jobs > div h4{
+	margin-bottom: 32px;
+}
+.jobs-title{
+	margin: 116px 8px 50px 8px;
+	text-align: center;
+}
+
+/* Features */
+.features-wrapper{
+	background-color: var(--color-white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.features-wrapper .features-title{
+	margin: 80px 8px 38px 8px;
+	text-align: center;
+}
+.features-wrapper .features{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	max-width: 1440px;
+}
+.features-wrapper .features > *{
+	max-width: 331px;
+	margin: 32px 52px;
+}
+.features-wrapper .features .title{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	margin-bottom: 12px;
+}
+.features-wrapper .features .title > h4{
+	margin-left: 16px;
+}
+.features-wrapper .features > div img{
+	width: 44px;
+	display: inline-block;
+}
+.features-wrapper .features > div h4{
+	display: inline;
+}
+
+/* Favorites */
+.favorites-wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.favorites-wrapper .favorites-title{
+	margin: 80px 8px 0 8px;
+	text-align: center;
+}
+.favorites-wrapper .favorites{
+	max-width: 1400px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 64px;
+}
+.favorites-wrapper .favorites > div{
+	display: flex;
+	flex-direction: column;
+	color: var(--color-black);
+	max-width: 331px;
+	margin: 32px 52px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.favorites-wrapper .favorites > div img{
+	max-width: 100%;
+}
+.favorites-wrapper .favorites > div h6{
+	margin: 24px 16px 6px 16px;
+}
+.favorites-wrapper .favorites > div p{
+	margin: 6px 16px 24px 16px;
+}
+
 /* Media Query para mobile */
 @media (max-width: 425px){
-	h1{
-		font-size: 24px;
+	h1,h2, h5{
+		font-size: 24px !important;
 	}
-	h2{
-		font-size: 24px;
-	}
-	h3{
-		font-size: 20px;
-	}
-	h4{
-		font-size: 20px;
+	h3, h4{
+		font-size: 20px !important;
 	}
 	.header{
 		padding: 0px 16px;
@@ -382,7 +514,7 @@ button{
 		width: 27px;
 		height: 26px;
 	}
-	.header .menu img{
+	.header .menu img{flex-
 		display: block;
 		max-width: 22px;
 	}
@@ -411,6 +543,12 @@ button{
 	.hero-banner .banner-container button{
 		font-size: 16px;
 		margin: 8px 0;
+	}
+	.hero-banner.left .banner-container{
+		align-items: center;
+		justify-content: flex-end;
+		margin: 0 8px 24px 8px;
+		text-align: center;
 	}
 	.simple-banner{
 		max-width: 100%;
@@ -462,6 +600,18 @@ button{
 	}
 	.search-wrapper .search button, .search-wrapper .search input{
 		font-size: 16px;
+	}
+	.jobs-title{
+		margin: 32px 8px 32px 8px
+	}
+	.jobs-wrapper{
+		padding-bottom: 32px;
+	}
+	.favorites-wrapper .favorites-title{
+		margin: 32px 8px 16px 8px;
+	}
+	.favorites-wrapper .favorites{
+		margin-bottom: 32px;
 	}
 	p, span{
 		font-size: 16px !important;
