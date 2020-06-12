@@ -498,6 +498,101 @@ button{
 	margin: 6px 16px 24px 16px;
 }
 
+/* Contact */
+.contact-wrapper{
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+.contact-wrapper .contact{
+	max-width: 1400px;
+	width: 100%;
+	margin: -210px 16px 80px 16px;
+	flex-wrap: wrap;
+	display: flex;
+}
+
+.contact-wrapper .contact .contact-info{
+	background-color: var(--color-purple);
+	color: var(--color-white);
+	min-width: 350px;
+	flex-grow: 1;
+}
+.contact-wrapper .contact .contact-form{
+	min-width: 640px;
+	background-color: var(--color-white);
+	flex-grow: 2;
+	display: flex;
+	flex-direction: column;
+}
+.contact-wrapper .contact .contact-info .contact-title{
+	
+}
+.contact-wrapper .contact .contact-info .info > div{
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: row;
+	align-items: center;
+	margin: 24px 36px 24px 36px;
+}
+.contact-wrapper .contact .contact-info .info > div:first-child{
+	margin-bottom: 104px;
+}
+.contact-wrapper .contact .contact-info .info > div:last-child{
+	margin-bottom: 134px;
+}
+.contact-wrapper .contact .contact-info .info > div p{
+	margin-left: 16px;
+}
+.contact-wrapper .contact .contact-info .info > div img{
+	max-width: 30px;
+}
+.contact-wrapper .contact .contact-form > div{
+	margin: 0px 40px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.contact-wrapper .contact .contact-form > div h5{
+	margin: 24px 0px 20px 0px;
+}
+.contact-wrapper .contact .contact-form .form input{
+	min-width: 250px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	flex-grow: 1;
+	font-size: 16px;
+	font-family: var(--text-font);
+	padding: 8px 16px;
+	border: none;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+.contact-wrapper .contact .contact-form .form input:first-child{
+	margin-right: 8px;
+}
+.contact-wrapper .contact .contact-form .form input:last-child{
+	margin-left: 8px;
+}
+.contact-footer{
+	margin-top: 150px;
+}
+.contact-footer input{
+	margin-right: 8px;
+	flex-grow: 3;
+	font-size: 16px;
+	font-family: var(--text-font);
+	padding: 8px 16px;
+	border: none;
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+.contact-footer button{
+	margin-left: 8px;
+	flex-grow: 1;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
 /* Media Query para mobile */
 @media (max-width: 425px){
 	h1,h2, h5{
@@ -514,7 +609,7 @@ button{
 		width: 27px;
 		height: 26px;
 	}
-	.header .menu img{flex-
+	.header .menu img{
 		display: block;
 		max-width: 22px;
 	}
@@ -611,6 +706,25 @@ button{
 		margin: 32px 8px 16px 8px;
 	}
 	.favorites-wrapper .favorites{
+		margin-bottom: 32px;
+	}
+	.contact-wrapper .contact .contact-form, .contact-wrapper .contact .contact-info{
+		min-width: auto;
+	}
+	.contact-wrapper .contact .contact-form .form input:last-child, .contact-wrapper .contact .contact-form .form input:first-child, .contact-footer input, .contact-footer button{
+		margin: 16px 0px;
+	}
+	.contact-wrapper .contact .contact-info .info > div{
+		flex-direction: column;
+		text-align: center;
+	}
+	.contact-wrapper .contact .contact-info .info > div > *{
+		margin: 4px 8px;
+	}
+	.contact-wrapper .contact .contact-info .info > div:first-child{
+		margin: 32px 8px 24px 8px;
+	}
+	.contact-wrapper .contact .contact-info .info > div:last-child{
 		margin-bottom: 32px;
 	}
 	p, span{
